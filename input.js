@@ -31,6 +31,12 @@ const handleUserInput = function(key) {
     connection.write("Move: right");
   } else if (key === '\u0003') {
     process.exit();
+  } else if (key === '1') {
+    connection.write('Say: Snakes are cool');
+  } else if (key === '2') {
+    connection.write('Say: I like apples');
+  } else if (key === '3') {
+    connection.write('Say: I can eat my own tail');
   }
 };
 
